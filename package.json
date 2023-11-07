@@ -10,6 +10,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
@@ -22,6 +23,7 @@
     "gatsby-plugin-manifest": "^5.12.0",
     "gatsby-plugin-sitemap": "^6.12.0",
     "gatsby-plugin-webpack-statoscope": "^1.0.3",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
